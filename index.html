@@ -1,0 +1,438 @@
+<title>Acupuncture of Orlando: What We Found</title>
+<style>
+:root{
+  --canvas:#F6F8F9;
+  --surface:#FFFFFF;
+  --raised:#EEF3F5;
+  --ink:#313030;
+  --ink-2:#33454E;
+  --muted:#61757F;
+  --faint:#8B9BA3;
+  --line:rgba(13,21,25,.10);
+  --line-soft:rgba(13,21,25,.06);
+  --accent:#208B97;
+  --accent-text:#1B6570;
+  --accent-wash:#E5F1F2;
+  --flag:#A8471C;
+  --flag-wash:#FBEDE7;
+  --good:#2C7355;
+  --good-wash:#E6F1EB;
+  --serif:ui-serif,"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --canvas:#0C1418; --surface:#131E23; --raised:#182931;
+    --ink:#EAF1F4; --ink-2:#C2D2D9; --muted:#8FA5AE; --faint:#6B808A;
+    --line:rgba(234,241,244,.14); --line-soft:rgba(234,241,244,.08);
+    --accent:#3FA7B3; --accent-text:#7FCAD4;
+    --accent-wash:#14313B; --flag:#E0865B; --flag-wash:#331A11;
+    --good:#6FBE97; --good-wash:#12291F;
+  }
+}
+:root[data-theme="dark"]{
+  --canvas:#0C1418; --surface:#131E23; --raised:#182931;
+  --ink:#EAF1F4; --ink-2:#C2D2D9; --muted:#8FA5AE; --faint:#6B808A;
+  --line:rgba(234,241,244,.14); --line-soft:rgba(234,241,244,.08);
+  --accent:#3FA7B3; --accent-text:#7FCAD4;
+  --accent-wash:#14313B; --flag:#E0865B; --flag-wash:#331A11;
+  --good:#6FBE97; --good-wash:#12291F;
+}
+:root[data-theme="light"]{
+  --canvas:#F6F8F9; --surface:#FFFFFF; --raised:#EEF3F5;
+  --ink:#313030; --ink-2:#33454E; --muted:#61757F; --faint:#8B9BA3;
+  --line:rgba(13,21,25,.10); --line-soft:rgba(13,21,25,.06);
+  --accent:#208B97; --accent-text:#1B6570;
+  --accent-wash:#E5F1F2; --flag:#A8471C; --flag-wash:#FBEDE7;
+  --good:#2C7355; --good-wash:#E6F1EB;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{
+  margin:0;background:var(--canvas);color:var(--ink);
+  font-family:var(--sans);font-size:17px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1100px;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)}
+.col{max-width:68ch}
+
+header.top{border-bottom:1px solid var(--line);padding:clamp(2.5rem,6vw,4rem) 0 clamp(2rem,4vw,3rem)}
+.kicker{font-size:.8125rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 1.25rem}
+h1{
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(2.1rem,5.2vw,3.4rem);line-height:1.08;letter-spacing:-.015em;
+  margin:0;text-wrap:balance;max-width:20ch;
+}
+.sub{color:var(--ink-2);font-size:1.0625rem;margin:1.5rem 0 0;max-width:62ch}
+.meta{display:flex;flex-wrap:wrap;gap:.5rem 1.75rem;margin-top:2rem;font-size:.875rem;color:var(--muted)}
+.meta b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+
+section{padding:clamp(2.75rem,6vw,4.5rem) 0;border-bottom:1px solid var(--line-soft)}
+section:last-of-type{border-bottom:0}
+.sec-no{font-family:var(--mono);font-size:.75rem;color:var(--accent-text);letter-spacing:.08em;margin:0 0 .875rem}
+h2{
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(1.5rem,3.2vw,2.05rem);line-height:1.18;letter-spacing:-.01em;
+  margin:0 0 1rem;text-wrap:balance;max-width:28ch;
+}
+h3{font-size:1.0625rem;font-weight:640;margin:2.25rem 0 .625rem;letter-spacing:-.005em}
+p{margin:0 0 1.125rem}
+p.lead{font-size:1.1875rem;color:var(--ink-2);line-height:1.55}
+strong{font-weight:640}
+em{font-style:normal;color:var(--accent-text);font-weight:600}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:2.25rem 0}
+.stat{background:var(--surface);padding:1.5rem 1.375rem}
+.stat .n{font-family:var(--serif);font-size:2.3rem;line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat .l{font-size:.875rem;color:var(--muted);margin-top:.5rem;line-height:1.45}
+
+.tbl-scroll{overflow-x:auto;margin:1.75rem 0;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{width:100%;border-collapse:collapse;font-size:.9375rem;min-width:460px}
+th,td{text-align:left;padding:.8125rem 1.125rem;border-bottom:1px solid var(--line-soft);vertical-align:top}
+thead th{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;
+  background:var(--raised);border-bottom:1px solid var(--line)}
+tbody tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.num b{font-weight:640}
+
+.bar{display:block;height:.5rem;border-radius:2px;background:var(--accent);opacity:.85}
+.bar-wrap{display:flex;align-items:center;gap:.75rem;min-width:170px}
+.bar-track{flex:1;background:var(--line-soft);border-radius:2px;height:.5rem;overflow:hidden}
+.bar-val{font-variant-numeric:tabular-nums;font-size:.875rem;color:var(--muted);width:2.25rem;text-align:right}
+tr.zero .bar{background:var(--flag);opacity:.55}
+tr.zero td:first-child{color:var(--flag);font-weight:600}
+
+.flag,.note,.win{border-radius:10px;padding:1.375rem 1.5rem;margin:1.75rem 0;border:1px solid}
+.flag{background:var(--flag-wash);border-color:color-mix(in oklab,var(--flag) 30%,transparent)}
+.note{background:var(--accent-wash);border-color:color-mix(in oklab,var(--accent) 32%,transparent)}
+.win{background:var(--good-wash);border-color:color-mix(in oklab,var(--good) 30%,transparent)}
+.flag h4,.note h4,.win h4{margin:0 0 .5rem;font-size:.9375rem;font-weight:680;letter-spacing:.01em}
+.flag h4{color:var(--flag)} .note h4{color:var(--accent-text)} .win h4{color:var(--good)}
+.flag p:last-child,.note p:last-child,.win p:last-child{margin-bottom:0}
+
+blockquote{
+  margin:1.5rem 0;padding:0 0 0 1.375rem;border-left:2px solid var(--accent);
+  font-family:var(--serif);font-size:1.125rem;line-height:1.5;color:var(--ink);
+}
+blockquote cite{display:block;margin-top:.75rem;font-family:var(--sans);font-size:.8125rem;
+  font-style:normal;color:var(--muted);letter-spacing:.01em}
+.quotes{display:grid;gap:.5rem;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));margin:1.75rem 0}
+.quotes blockquote{margin:0;background:var(--surface);padding:1.375rem 1.375rem 1.375rem 1.25rem;
+  border-radius:0 10px 10px 0;font-size:1.0625rem}
+
+ol.steps{margin:1.5rem 0;padding:0;list-style:none;display:grid;gap:1.125rem}
+ol.steps li{display:grid;grid-template-columns:1.75rem 1fr;gap:.875rem;align-items:start}
+ol.steps .i{font-family:var(--mono);font-size:.8125rem;color:var(--accent-text);padding-top:.25rem}
+ol.steps b{font-weight:640}
+ol.steps p{margin:.25rem 0 0;color:var(--ink-2);font-size:.9375rem}
+
+.q{border-top:1px solid var(--line);padding:1.375rem 0}
+.q:last-child{border-bottom:1px solid var(--line)}
+.q-head{display:flex;gap:1rem;align-items:baseline}
+.q-n{font-family:var(--mono);font-size:.8125rem;color:var(--accent-text);flex:none}
+.q-t{font-weight:640;font-size:1.0625rem;letter-spacing:-.005em}
+.q-why{margin:.5rem 0 0 2.0625rem;color:var(--muted);font-size:.9375rem}
+.pill{display:inline-block;font-size:.6875rem;letter-spacing:.06em;text-transform:uppercase;
+  padding:.1875rem .5rem;border-radius:3px;font-weight:660;margin-left:.5rem;vertical-align:.08em}
+.pill.block{background:var(--flag-wash);color:var(--flag)}
+.pill.money{background:var(--good-wash);color:var(--good)}
+
+footer{padding:2.5rem 0 4rem;color:var(--faint);font-size:.8125rem;border-top:1px solid var(--line)}
+@media (max-width:640px){
+  body{font-size:16px}
+  .stat .n{font-size:1.9rem}
+  .quotes{grid-template-columns:1fr}
+}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <p class="kicker">Findings for our conversation, August 19, 2026</p>
+  <h1>The practice is stronger than its advertising shows</h1>
+  <p class="sub">
+    Acupuncture of Orlando has more reviews than any other acupuncture clinic in the city, a
+    booked schedule, and a physician whose patients say she explains why their pain is happening.
+    None of that appears on the website, and the current campaign points at conditions the
+    practice rarely treats.
+  </p>
+  <div class="meta">
+    <span><b>128</b> minutes of recorded calls reviewed</span>
+    <span><b>320</b> Google reviews analyzed</span>
+    <span><b>50</b> clinic photos assessed</span>
+  </div>
+</header>
+
+<section>
+  <p class="sec-no">01</p>
+  <h2>Where things stand, in four numbers</h2>
+
+  <div class="stats">
+    <div class="stat"><div class="n">4.9</div><div class="l">across 322 Google reviews</div></div>
+    <div class="stat"><div class="n">99%</div><div class="l">of those reviews answered by the practice</div></div>
+    <div class="stat"><div class="n">14.2%</div><div class="l">of ad clicks become a phone call, roughly twice the healthcare average</div></div>
+    <div class="stat"><div class="n">$190</div><div class="l">is what a new patient currently costs to acquire</div></div>
+  </div>
+
+  <div class="col">
+    <p>
+      The review count is the real asset here. No other practice in the local field has collected
+      this many voices, and a 4.9 across 322 people is a far harder number to hold than a clean
+      5.0 across 27.
+    </p>
+  </div>
+
+  <div class="tbl-scroll">
+    <table>
+      <thead><tr><th>Acupuncture practices in Orlando</th><th class="num">Rating</th><th class="num">Reviews</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Acupuncture of Orlando</strong></td><td class="num"><b>4.9</b></td><td class="num"><b>322</b></td></tr>
+        <tr><td>Family Integrative Medicine</td><td class="num">5.0</td><td class="num">277</td></tr>
+        <tr><td>Ling’s Acupuncture</td><td class="num">4.9</td><td class="num">136</td></tr>
+        <tr><td>Orlando Alternative Health</td><td class="num">5.0</td><td class="num">122</td></tr>
+        <tr><td>West Orlando Acupuncture</td><td class="num">5.0</td><td class="num">111</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <p class="sec-no">02</p>
+  <h2>The campaign points at conditions the practice rarely sees</h2>
+
+  <div class="col">
+    <p class="lead">
+      The current funnel plan builds everything around four conditions. We tested them against
+      299 reviews written in full sentences, meaning against what patients bring up on their own.
+    </p>
+  </div>
+
+  <div class="tbl-scroll">
+    <table>
+      <thead><tr><th>Condition in the plan</th><th>Mentions across 299 reviews</th></tr></thead>
+      <tbody>
+        <tr class="zero"><td>Chronic fatigue, CFS/ME</td>
+          <td><div class="bar-wrap"><div class="bar-track"><span class="bar" style="width:0"></span></div><span class="bar-val">0</span></div></td></tr>
+        <tr class="zero"><td>Fibromyalgia</td>
+          <td><div class="bar-wrap"><div class="bar-track"><span class="bar" style="width:1.7%"></span></div><span class="bar-val">1</span></div></td></tr>
+        <tr class="zero"><td>Autoimmune-related pain</td>
+          <td><div class="bar-wrap"><div class="bar-track"><span class="bar" style="width:1.7%"></span></div><span class="bar-val">1</span></div></td></tr>
+        <tr><td>Chronic migraines</td>
+          <td><div class="bar-wrap"><div class="bar-track"><span class="bar" style="width:11.7%"></span></div><span class="bar-val">7</span></div></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>What patients actually come in for</h3>
+  <div class="tbl-scroll">
+    <table>
+      <thead><tr><th>Theme</th><th>Reviews mentioning it</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Back pain</strong></td>
+          <td><div class="bar-wrap"><div class="bar-track"><span class="bar" style="width:100%"></span></div><span class="bar-val">60</span></div></td></tr>
+        <tr><td>Anxiety, stress, sleep</td>
+          <td><div class="bar-wrap"><div class="bar-track"><span class="bar" style="width:68%"></span></div><span class="bar-val">41</span></div></td></tr>
+        <tr><td>Neck and shoulder</td>
+          <td><div class="bar-wrap"><div class="bar-track"><span class="bar" style="width:57%"></span></div><span class="bar-val">34</span></div></td></tr>
+        <tr><td>Sciatica, nerve pain, numbness</td>
+          <td><div class="bar-wrap"><div class="bar-track"><span class="bar" style="width:40%"></span></div><span class="bar-val">24</span></div></td></tr>
+        <tr><td>Knee, hip, joints</td>
+          <td><div class="bar-wrap"><div class="bar-track"><span class="bar" style="width:38%"></span></div><span class="bar-val">23</span></div></td></tr>
+        <tr><td>Sports injury, post-surgical</td>
+          <td><div class="bar-wrap"><div class="bar-track"><span class="bar" style="width:23%"></span></div><span class="bar-val">14</span></div></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note col">
+    <h4>What this changes</h4>
+    <p>
+      Ad groups and landing pages belong on back pain, neck and shoulder, sciatica and nerve pain,
+      joint pain, and sleep and stress. Bidding on fibromyalgia buys clicks the practice cannot
+      convert. Google's own topic analysis of the profile says the same thing:
+      <em>back pain relief</em> sits at the top with 31 mentions.
+    </p>
+  </div>
+</section>
+
+<section>
+  <p class="sec-no">03</p>
+  <h2>Three things on the website that waste every ad dollar</h2>
+
+  <ol class="steps col">
+    <li><span class="i">01</span><div>
+      <b>There is not a single tappable phone link on the homepage.</b>
+      <p>The number appears four times as plain text in the source. From a phone, no visitor can
+      call directly from the page. The phone call is this practice's strongest conversion, and
+      the website contributes nothing to it.</p>
+    </div></li>
+    <li><span class="i">02</span><div>
+      <b>The booking button sends new patients into the returning-patient flow.</b>
+      <p>The homepage links seven times to a path explicitly built for previous visits. Someone
+      arriving from an ad, ready to book, lands in the wrong form.</p>
+    </div></li>
+    <li><span class="i">03</span><div>
+      <b>One page serves every condition.</b>
+      <p>Someone searching for sciatica lands on a general overview. That costs ad quality, raises
+      the cost per click, and loses visitors who were ready to make an appointment.</p>
+    </div></li>
+  </ol>
+
+  <div class="win col">
+    <h4>The good news</h4>
+    <p>
+      Everything after the click already works. 14.2 percent of clicks become a phone call, about
+      twice the healthcare benchmark. The substance is there. What is broken can be fixed in days.
+    </p>
+  </div>
+</section>
+
+<section>
+  <p class="sec-no">04</p>
+  <h2>Every critical review comes down to the same thing</h2>
+
+  <div class="col">
+    <p>
+      Out of 320 reviews, five are critical. Three of those carry written feedback, and all three
+      point at one issue: <strong>the price was not clear before treatment.</strong>
+    </p>
+  </div>
+
+  <div class="quotes">
+    <blockquote>My mother politely asked how much the session cost, but they never responded, avoiding the question.
+      <cite>1 star, verbatim</cite></blockquote>
+    <blockquote>I felt pressured to buy supplements they claimed would help me.
+      <cite>2 stars, verbatim</cite></blockquote>
+  </div>
+
+  <div class="flag col">
+    <h4>The sore spot, and the biggest opening</h4>
+    <p>
+      Price comes up in 36 reviews overall. Meanwhile the one local competitor running serious
+      search ads promotes a first consultation at $45 instead of $150, right in the ad copy.
+      A landing page that states the price range openly repairs a real weakness and answers that
+      offer at the same time.
+    </p>
+  </div>
+</section>
+
+<section>
+  <p class="sec-no">05</p>
+  <h2>What patients actually praise</h2>
+
+  <div class="col">
+    <p class="lead">
+      Not a method, not a device, not a diagnosis. The way the work is done.
+    </p>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="n">131</div><div class="l">explicitly recommend the practice</div></div>
+    <div class="stat"><div class="n">39</div><div class="l">highlight that she explains things and they understand</div></div>
+    <div class="stat"><div class="n">31</div><div class="l">write that she takes her time and listens</div></div>
+  </div>
+
+  <div class="quotes">
+    <blockquote>I have been in pain for many years and considered acupuncture to be a last resort and had basically given up on relief of any kind.
+      <cite>Laura Austin, Google review</cite></blockquote>
+    <blockquote>I’ve always been extremely skeptical about holistic treatments. I’ve seen it all: orthopedic surgeons, rheumatologists, physical therapy, MRIs, X-rays, bloodwork.
+      <cite>Maria Aguiar, Google review</cite></blockquote>
+    <blockquote>Severe back pain for over 20 years, nerve damage, ibuprofen twice a night to get through work. My back pain is almost zero.
+      <cite>JunFan777, Google review</cite></blockquote>
+    <blockquote>She does an excellent job explaining why the pain you’re feeling is happening and how it affects other parts of your body.
+      <cite>Autumn K, Google review</cite></blockquote>
+  </div>
+
+  <div class="note col">
+    <h4>The positioning is already written</h4>
+    <p>
+      These sentences are better than any copy we could invent. The page should promise exactly
+      this experience: someone takes the time, explains what is happening in your body, and does
+      it for people who have already tried elsewhere.
+    </p>
+  </div>
+</section>
+
+<section>
+  <p class="sec-no">06</p>
+  <h2>What we build next</h2>
+
+  <ol class="steps col">
+    <li><span class="i">01</span><div>
+      <b>A dedicated landing page for the search ads</b>
+      <p>No navigation, a tappable phone number, a working booking path, and a short multi-step
+      form. Built on the real treatment photos from the clinic rather than stock imagery.</p>
+    </div></li>
+    <li><span class="i">02</span><div>
+      <b>One version per condition that actually exists</b>
+      <p>Back pain first, then neck and shoulder, sciatica and nerve pain, joints.</p>
+    </div></li>
+    <li><span class="i">03</span><div>
+      <b>Two immediate fixes to the current site</b>
+      <p>Make the phone number tappable and point the booking button at the right path. Small
+      effort, measurable right away, independent of everything else.</p>
+    </div></li>
+    <li><span class="i">04</span><div>
+      <b>Account audit and campaign rebuild</b>
+      <p>Verify the campaign type, cut wasted search terms, align ad scheduling with clinic hours,
+      switch from metro targeting to a radius, and get call tracking measured properly.</p>
+    </div></li>
+    <li><span class="i">05</span><div>
+      <b>The cheapest lever sits outside the advertising</b>
+      <p>43 calls produced 10 patients. The other 33 left no trace, because nothing captures them.
+      At this patient value, that is the largest single line item on this page.</p>
+    </div></li>
+  </ol>
+</section>
+
+<section>
+  <p class="sec-no">07</p>
+  <h2>What we need to settle today</h2>
+
+  <div class="col">
+    <p>Ordered by urgency. The first four block the build.</p>
+  </div>
+
+  <div class="q">
+    <div class="q-head"><span class="q-n">01</span><span class="q-t">What does a first treatment cost, and what does a typical care plan cost?<span class="pill block">blocking</span></span></div>
+    <p class="q-why">No document, call, or script we reviewed contains a single figure. The page has to answer the price objection and we will not invent a number.</p>
+  </div>
+  <div class="q">
+    <div class="q-head"><span class="q-n">02</span><span class="q-t">How should people book, and is there a path for new patients?<span class="pill block">blocking</span></span></div>
+    <p class="q-why">The current button leads into the returning-patient flow. Without the right destination, every optimization upstream is wasted.</p>
+  </div>
+  <div class="q">
+    <div class="q-head"><span class="q-n">03</span><span class="q-t">How is insurance handled?<span class="pill block">blocking</span></span></div>
+    <p class="q-why">For US patients this is the second question after price. It appears nowhere in the material we have.</p>
+  </div>
+  <div class="q">
+    <div class="q-head"><span class="q-n">04</span><span class="q-t">May we use the treatment photos, and do signed authorizations exist?<span class="pill block">blocking</span></span></div>
+    <p class="q-why">There are 50 strong clinic photos. Faces are almost never identifiable, but website use still requires written HIPAA authorization from the patients shown.</p>
+  </div>
+  <div class="q">
+    <div class="q-head"><span class="q-n">05</span><span class="q-t">Who answers the phone, and what happens to callers who do not book?<span class="pill money">revenue</span></span></div>
+    <p class="q-why">33 lost calls in a single month. Five points of close rate is worth about a dollar off the cost per click, and it costs nothing to gain.</p>
+  </div>
+  <div class="q">
+    <div class="q-head"><span class="q-n">06</span><span class="q-t">What is a patient worth across a full course of treatment?<span class="pill money">revenue</span></span></div>
+    <p class="q-why">We have been working with roughly $550. In conversation the figure of a few thousand dollars for a full treatment came up. This determines what a new patient may cost to acquire.</p>
+  </div>
+  <div class="q">
+    <div class="q-head"><span class="q-n">07</span><span class="q-t">Access to the Google Ads account</span></div>
+    <p class="q-why">Without it the audit stays guesswork. The current pattern suggests an automated campaign type, which would explain most of the high cost per click.</p>
+  </div>
+  <div class="q">
+    <div class="q-head"><span class="q-n">08</span><span class="q-t">What happens to calls outside clinic hours?</span></div>
+    <p class="q-why">The clinic is staffed Monday to Friday, 8am to 6pm. Ads run around the clock unless a schedule is set.</p>
+  </div>
+</section>
+
+<footer class="wrap">
+  Sources: three recorded calls from March 2, May 6 and July 28, 2026; the onboarding and playbook
+  material; all reel scripts from March through July; 320 Google reviews scraped on August 18, 2026;
+  and our own measurements of aorelief.com and competing practices. Campaign performance figures
+  as reported by the client.
+</footer>
+
+</div>
